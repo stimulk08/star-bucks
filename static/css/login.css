@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap');
+
+body{
+    background: #1A1A1A;
+    font-family: 'Inter', sans-serif;
+}
+
+header img{
+    position: relative;
+    left: calc(100% - 100px);
+    top: 20px;
+    height: 10vh;
+    width: 5vw;
+}
+
+main{
+    height: 80vh;
+    width: 100vw;
+    margin-top: 10vh;
+}
+
+.signin-with-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    margin-top: 10px;
+}
+
+.logo-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+.signin, .signin-with{
+    color: #FF8C00;
+}
+
+.create, .need-help{
+    color: #C0C0C0;
+}
+
+.form-footer{
+    margin-top: 50px;
+    height: 20%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.company-name{
+    font-family: 'Inter', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 100%;
+    display: inline-block;
+    width: 20%;
+    color: #FF8C00;
+}
+
+.logo-container img{
+   width: 50%;
+}
+
+.line{
+    height: 3px;
+    border-radius: 10px;
+    width: 100%;
+    background: orange;
+}
+
+.row{
+    border: 1px solid #FF8C00;
+    margin-top: 19px;
+    border-radius: 25px;
+    background: #3B3737;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+}
+
+
+.input, .button{
+    height: 10%;
+}
+
+.button{
+    height: 10%;
+    width: 50%;
+}
+
+.input{
+    width: 70%;
+}
+
+form{
+    display: flex;
+    margin: auto;
+    align-items: center;
+    flex-direction: column;
+    background: #3B3737;
+    border-radius: 25px;
+    height: 100%;
+    width: 40%;
+}
+
+.need-help, .signin-with{
+    font-size: 25px;
+}

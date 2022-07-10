@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Star$</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}">
+</head>
+<body>
+{#    <header>#}
+{#        <img src="{{ url_for('static', filename='images/profile.png') }}" alt="profile">#}
+{#    </header>#}
+    <main>
+         <form action="/login" method="post">
+             <div class="logo-container">
+                 <img src="{{ url_for('static', filename='images/logo.png') }}">
+{#                 <div class="company-name">Star$</div>#}
+             </div>
+             <input class="row input" type="text" name="login" placeholder="Логин">
+             <input class="row input" type="password" name="pwd" placeholder="Пароль">
+             <button class="row button signin" type="submit">Войти</button>
+             <button class="row button create">Создать аккаунт</button>
+             <div class="form-footer">
+                 <div class="need-help">Нужна помощь?</div>
+                 <div class="line"></div>
+                 <div class="signin-with">Войти с помощью</div>
+                 <div class="signin-with-container">
+                    <img src="{{ url_for('static', filename='images/google.png') }}">
+                    <img src="{{ url_for('static', filename='images/discord.png') }}">
+                    <img src="{{ url_for('static', filename='images/vk.png') }}">
+                 </div>
+             </div>
+        </form>
+    </main>
+</body>
+</html>

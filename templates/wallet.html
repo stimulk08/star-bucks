@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Wallet
+{% endblock %}
+
+{% block main %}
+<div class="balance">
+    <div class="balance-inner">
+        <h2>Баланс кошелька</h2>
+        <p><span class="star-balance">100</span> Star$</p>
+    </div>
+</div>
+<div class="rate">
+    <h2>Курс валюты</h2>
+    <table>
+        <tr>
+            <td>Валюта</td>
+            <td>Код</td>
+            <td>Курс</td>
+        </tr>
+        <tr>
+            <td>Российский рубль</td>
+            <td>Доллар США</td>
+            <td>Евро</td>
+        </tr>
+        <tr>
+            <td>RU</td>
+            <td>USD</td>
+            <td>EUR</td>
+        </tr>
+        <tr>
+            <td>1 Star$ = <span class="course-ru">1</span></td>
+            <td>1 Star$ = <span class="course-usd">2</span></td>
+            <td>1 Star$ = <span class="course-eur">3</span></td>
+        </tr>
+    </table>
+</div>
+<div class="transactions-history">
+</div>
+
+
+{% endblock %}
