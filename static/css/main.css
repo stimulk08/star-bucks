@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap');
+
+body {
+    margin: 0;
+    background-color: #1A1A1A;
+    font-family: 'Inter', serif;
+    color: white;
+}
+
+header {
+    margin-top: 25px;
+    margin-right: 0;
+    max-width: 100%;
+    font-size: 36px;
+}
+
+.logo{
+    margin-left: 50px;
+}
+
+
+.settings{
+    margin-right: 50px;
+}
+
+.headerInner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+header ul{
+    display: flex;
+    justify-content: center;
+}
+
+header li{
+    list-style: none;
+    margin-left: 100px;
+}
+
+.quotes{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0;
+}
+
+main .quotes li {
+    text-decoration: none;
+    list-style: none;
+
+    color: white;
+    background-color: #3B3737;
+
+    border: 1px;
+    border-radius: 25px;
+
+    margin: 20px 76px;
+}
+
+main .quotes li blockquote p {
+    font-size: 36px;
+    font-style: italic;
+    line-height: 44px;
+    font-weight: 600;
+    padding: 2px 16px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+main .quotes li cite {
+    font-weight: 100;
+    font-size: 32px;
+
+    line-height: 39px;
+    text-align: right;
+    margin: 14px 53px 26px 50%;
+}
+
+nav {
+    justify-content: center;
+}
+
+a:hover {
+    color: #FF8C00;
+}
+.balance-inner{
+    background-color: #3B3737;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0;
+}
+.rate{
+    background-color: #3B3737;
+}

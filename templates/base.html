@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+    <script src="{{ url_for('static', filename='scripts/index.js') }}"></script>
+    <header>
+        <div class="container">
+            <div class="headerInner">
+                <div class="logo">
+                    <a href="/">
+                        <img class="logo-img" src="{{ url_for('static', filename='images/logo.png') }}">
+                    </a>
+                </div>
+                <nav>
+                    <ul class="menu">
+                        <li><a class="menu-button" href="/wallet">Wallet</a></li>
+                        <li><a class="menu-button" href="/rate">Rate</a></li>
+                        <li><a class="menu-button" href="/posts">Posts</a></li>
+                        <li><a class="menu-button" href="/shop">Shop</a></li>
+                        <li><a class="menu-button" href="/about">About</a></li>
+                    </ul>
+                </nav>
+                <div class="settings">
+                    <img class="settings-img" src="{{ url_for('static', filename='images/setting.png') }}">
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        {% block main %}{% endblock %}
+    </main>
+</body>
+</html>
