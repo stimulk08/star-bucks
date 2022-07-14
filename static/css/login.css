@@ -43,13 +43,12 @@ main{
 }
 
 .form-footer{
-    margin-top: 50px;
-    height: 20%;
+    margin-top: 20px;
+    height: 30%;
     width: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
 }
 
 .company-name{
@@ -71,6 +70,7 @@ main{
     border-radius: 10px;
     width: 100%;
     background: orange;
+    margin-top: 5px;
 }
 
 .row{
