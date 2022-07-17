@@ -1,15 +1,9 @@
 import requests
 
 
-
-def get_bit_course(currency):
+def get_bit_course():
     btc = requests.get('https://api.coindesk.com/v1/bpi/currentprice.json')
-    a = btc.json()
-    return btc.json()['bpi'][currency]['rate']
+    return btc.json()['bpi']
 
-
-
-bit = get_bit_course('USD')
-print(bit)
-
-
+# bit = get_bit_course('USD')
+# print(bit)

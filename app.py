@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request, redirect, url_for
 from flask_login import LoginManager, UserMixin, login_user, login_required, logout_user
+from currencyCalculator import get_bit_course
 
 app = Flask(__name__)
 
@@ -56,7 +57,8 @@ def posts():
 @app.route("/rate")
 @login_required
 def rate():
-    return render_template("rate.html")
+    bit_course = get_bit_course()
+    return render_template("rate.html", USD=bit_course['USD']['rate'])
 
 
 @app.route("/shop")
